@@ -1,0 +1,15 @@
+# to ignore the .vscode folder and its content
+.vscode
+
+# ignore the generated history
+.Rhistory
+.RData
+
+# to ignore all data files
+*.stru
+*.xlsx
+*.txt
+
+# ignore all images
+*.jpeg
+*.png
