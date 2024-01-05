@@ -58,8 +58,8 @@ for (i in seq(22)) {
   )
 }
 
-# draw eigen values
 # TODO: show eigen values also for the other axes
+# draw eigen values
 add.scatter.eig(
   pca_results$eig[1:20],
   ratio = 0.15,
