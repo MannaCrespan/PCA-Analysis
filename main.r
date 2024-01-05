@@ -51,7 +51,7 @@ for (i in seq(22)) {
     pca_results$li[, asse_2][i],
     rownames(x)[i],
     cex = 0.8,
-    adj = find_position(
+    adj = find_adj_parameter(
       pca_results$li[, asse_1][i],
       pca_results$li[, asse_2][i]
     )
