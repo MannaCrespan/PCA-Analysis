@@ -69,7 +69,32 @@ add.scatter.eig(
   2,
   1
 )
+
 # to see the percentages of explained variance:
 summary(pca_results)
 # this command returns me the projected inertia (%) for each axis and the cumulative ones
 # which correspond to the % of variance explained
+
+# to get an UPGMA tree
+# import 3rd parties libraries
+library(poppr)
+
+# use the aboot function to obtain UPGMA with Nei's distance and bootstraps
+# you can choose different genetic distances, different bootstraps, following
+# the function instructions on R documentation
+aboot(
+  data,
+  strata = NULL,
+  tree = "upgma",
+  distance = "nei.dist",
+  sample = 100,
+  cutoff = 50,
+  showtree = TRUE,
+  missing = "mean",
+  mcutoff = 0,
+  quiet = FALSE,
+  root = NULL
+)
+
+# to know how to cite:
+citation(package = "poppr")
