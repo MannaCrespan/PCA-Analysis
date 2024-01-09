@@ -69,3 +69,7 @@ add.scatter.eig(
   2,
   1
 )
+# to see the percentages of explained variance:
+summary(pca_results)
+# this command returns me the projected inertia (%) for each axis and the cumulative ones
+# which correspond to the % of variance explained
